@@ -17,6 +17,7 @@ import Icon from "react-native-vector-icons/Ionicons";
 import Feather from "react-native-vector-icons/Feather";
 import Alert from './components/Alert';
 import Volunteer from './components/Volunteer';
+import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 // Create the Tab Navigator outside of the App component
 const TabNav = createBottomTabNavigator();
@@ -73,7 +74,7 @@ function App() {
           options={{
             headerShown: false,
             tabBarIcon: ({ focused }) => (
-              <Icon name="logo-youtube" size={22} color={focused ? "red" : "black"} />
+              <FontAwesome5 name="clipboard-check" size={22} color={focused ? "red" : "black"} />
             ),
           }}
         />
