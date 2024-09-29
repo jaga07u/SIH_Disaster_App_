@@ -22,7 +22,7 @@ const News = () => {
     {
       platform: 'Al Jazeera',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhhd_Izjp4uAuPPd-agBNBkzYXJNo4BEpM8FkIpWv4npSrksjyaVL5w7tK0Mg1tkLUFbE&usqp=CAU',
-      title: 'Turkey-Syria earthquake',
+      title: 'Cyclone Biparjoy Wreaks Havoc in Gujarat',
       link: 'https://www.thehindu.com/sci-tech/energy-and-environment/ngt-impleads-kerala-tn-govts-in-suo-motu-case-on-wayanad-landslides/article68477558.ece',
     },
     {
@@ -62,24 +62,25 @@ const News = () => {
 
   const newsData = [
     {
-      title: '10 Dead, 18 Missing in Nepal Floods and Landslides',
-      source: 'Times of India',
-      image: 'https://static.toiimg.com/thumb/msid-113761221,imgsize-956305,width-400,resizemode-4/113761221.jpg',
-      link: 'https://timesofindia.indiatimes.com/world/south-asia/10-dead-18-missing-in-nepal-floods-and-landslides/articleshow/113760948.cms',
+      title: 'Heavy Rain Causes Flooding in Uttarakhand, 15 Dead, Dozens Missing',
+      source: 'Aljazeera',
+      image: 'https://www.aljazeera.com/wp-content/uploads/2023/08/AP23226419436740-1692023591.jpg?w=770&resize=770%2C513',
+      link: 'https://www.aljazeera.com/news/2023/8/14/dozens-dead-as-floods-landslides-hit-indias-himalayan-region',
     },
     {
-      title: 'NGT Involves Kerala, TN in Wayanad Landslides Case',
-      source: 'The Hindu',
-      image: 'https://th-i.thgim.com/public/incoming/xba8im/article68479228.ece/alternates/LANDSCAPE_1200/APTOPIX_India_Landslides_85082.jpg',
-      link: 'https://www.thehindu.com/sci-tech/energy-and-environment/ngt-impleads-kerala-tn-govts-in-suo-motu-case-on-wayanad-landslides/article68477558.ece',
+      title: 'Assam Floods Displace Over 2 Lakh People, Rescue Operations Ongoing',
+      source: 'VIF India',
+      image: 'https://www.vifindia.org/sites/default/files/Picture1_38.jpg',
+      link: 'https://www.vifindia.org/article/2022/july/04/floods-in-assam-the-case-for-rethinking-adaptation',
     },
     {
-      title: 'Landslide Kills 2 in China, Flash Floods Cause Devastation',
-      source: 'NDTV',
-      image: 'https://c.ndtvimg.com/2024-07/st7jrac_landslide-generic-unsplash-_625x300_28_July_24.jpg?im=FeatureCrop,algorithm=dnn,width=773,height=435',
-      link: 'https://www.ndtv.com/world-news/12-killed-in-landslide-triggered-by-flash-flooding-in-china-report-6207870',
+      title: 'Cyclone Biparjoy Wreaks Havoc in Gujarat, 8 Dead, Thousands Evacuated',
+      source: 'Indian Express',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPMObE3VpRClvh2XKE9mX8XjcHbzr4X_6O87Ti6n5GtLThwPvpyxUu2zbnm5nmxDFLNoo&usqp=CAU',
+      link: 'https://www.newindianexpress.com/nation/2023/Jun/17/weatheringbiparjoy-storm-that-left-behind-a-trail-of-destruction-2585817.html',
     },
   ];
+  
 
   const [selectedPlatform, setSelectedPlatform] = useState('');
 

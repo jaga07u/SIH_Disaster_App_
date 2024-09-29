@@ -4,8 +4,8 @@ import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityI
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import Ionicons from "react-native-vector-icons/Ionicons";
 
-const AlertCard = ({ title, intensity, issuedBy, location, time }) => {
-  const link="https://www.youtube.com/watch?v=MhDqKhJJF_w"
+const AlertCard = ({ title, intensity, issuedBy, location, time,link}) => {
+  //const link="https://www.youtube.com/watch?v=exMSmXqEKKo"
   const handlePress = () => {
     Linking.openURL(link).catch((err) => 
       console.error('An error occurred trying to open the URL:', err)

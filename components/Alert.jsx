@@ -6,46 +6,52 @@ import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityI
 const Alert = () => {
   const alerts = [
     {
-      title: 'Typhoon',
+      title: 'Cyclone',
       intensity: 'High Intensity',
-      issuedBy: 'Issued by Taiwan Central Weather Bureau',
-      location: 'Taiwan Strait, Eastern Coast',
-      time: '10:30 IST, 29 Sep 2024',
+      issuedBy: 'Issued by Indian Meteorological Department (IMD)',
+      location: 'Odisha, Coastal Areas',
+      time: '12:00 IST, 29 Sep 2024',
       intensityStyle: { backgroundColor: '#FDEDED', color: '#FF4747' },
+      link:"https://www.youtube.com/watch?v=0iWa9hmB7ag"
     },
     {
       title: 'Earthquake',
       intensity: 'Severe Intensity',
-      issuedBy: 'Issued by Disaster and Emergency Management Authority (AFAD)',
-      location: 'Eastern Turkey, Near Erzurum',
-      time: '03:20 IST, 28 Sep 2024',
+      issuedBy: 'Issued by National Disaster Management Authority (NDMA)',
+      location: 'Himachal Pradesh, Near Kangra',
+      time: '02:30 IST, 28 Sep 2024',
       intensityStyle: { backgroundColor: '#FDE8D0', color: '#FF7900' },
+      link:"https://www.youtube.com/watch?v=jvhl2OQdFwo"
     },
     {
       title: 'Floods',
       intensity: 'Severe Intensity',
-      issuedBy: 'Issued by Sudanese Meteorological Authority',
-      location: 'Khartoum and Surrounding Areas',
-      time: '14:45 IST, 27 Sep 2024',
+      issuedBy: 'Issued by Bihar State Disaster Management Authority',
+      location: 'Patna and Surrounding Areas',
+      time: '16:45 IST, 27 Sep 2024',
       intensityStyle: { backgroundColor: '#FDE8D0', color: '#FF7900' },
+       link:"https://www.youtube.com/watch?v=XXOkJDy32F8"
     },
     {
-      title: 'Hurricane',
+      title: 'Heatwave',
       intensity: 'Low Intensity',
-      issuedBy: 'Issued by U.S. National Hurricane Center',
-      location: 'Pacific Coast, Mexico',
-      time: '11:00 IST, 25 Sep 2024',
+      issuedBy: 'Issued by Indian Meteorological Department (IMD)',
+      location: 'Northern India, Rajasthan',
+      time: '13:00 IST, 25 Sep 2024',
       intensityStyle: { backgroundColor: '#D8F5D8', color: '#28A745' },
+       link:"https://www.youtube.com/watch?v=t0Nd0p-kNSc"
     },
     {
       title: 'Landslide',
       intensity: 'High Intensity',
-      issuedBy: 'Issued by National Disaster Risk Reduction and Management Authority (NDRRMA)',
-      location: 'Western Nepal, Myagdi District',
-      time: '08:15 IST, 24 Sep 2024',
+      issuedBy: 'Issued by Uttarakhand Disaster Management Authority',
+      location: 'Chamoli District, Uttarakhand',
+      time: '09:30 IST, 24 Sep 2024',
       intensityStyle: { backgroundColor: '#FDEDED', color: '#FF4747' },
+       link:"https://www.youtube.com/watch?v=wSUpbx9V8xc"
     },
   ];
+  
   
   return (
     <ScrollView contentContainerStyle={styles.container}>
@@ -78,6 +84,7 @@ const Alert = () => {
           location={alert.location}
           time={alert.time}
           intensityStyle={alert.intensityStyle}
+          link={alert.link}
         />
       ))}
     </ScrollView>

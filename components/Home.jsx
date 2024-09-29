@@ -8,13 +8,14 @@ import Profile from './Profile';
 const Home = () => {
   const alerts = [
     {
-      title: 'Typhoon',
+      title: 'Cyclone',
       intensity: 'High Intensity',
-      issuedBy: 'Issued by Taiwan Central Weather Bureau',
-      location: 'Taiwan Strait, Eastern Coast',
-      time: '10:30 IST, 29 Sep 2024',
+      issuedBy: 'Issued by Indian Meteorological Department (IMD)',
+      location: 'Odisha, Coastal Areas',
+      time: '12:00 IST, 29 Sep 2024',
       intensityStyle: { backgroundColor: '#FDEDED', color: '#FF4747' },
-    },
+      link:"https://www.youtube.com/watch?v=0iWa9hmB7ag"
+    }
     // Add more alert objects here
   ];
 
@@ -47,6 +48,7 @@ const Home = () => {
           location={alert.location}
           time={alert.time}
           intensityStyle={alert.intensityStyle}
+          link={alert.link}
         />
       ))}
 
