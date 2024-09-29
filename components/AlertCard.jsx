@@ -1,11 +1,16 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet,Linking } from 'react-native';
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 import Ionicons from "react-native-vector-icons/Ionicons";
 
 const AlertCard = ({ title, intensity, issuedBy, location, time }) => {
-  
+  const link="https://www.youtube.com/watch?v=MhDqKhJJF_w"
+  const handlePress = () => {
+    Linking.openURL(link).catch((err) => 
+      console.error('An error occurred trying to open the URL:', err)
+    );
+  };
   // Determine background color based on intensity
   const getBackgroundColor = () => {
     switch (intensity) {
@@ -57,10 +62,10 @@ const AlertCard = ({ title, intensity, issuedBy, location, time }) => {
           <FontAwesome5 name="assistive-listening-systems" size={25} color={`${intensity == "High Intensity"?"white":"black"}`} />
             <Text>Listen</Text></View>
         </TouchableOpacity>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={handlePress}>
           <View style={styles.actionText}>
-          <Ionicons name="alert-circle-outline" size={25} color={`${intensity == "High Intensity"?"white":"black"}`} />
-           <Text>Dos & Don'ts</Text></View>
+          <Ionicons name="logo-youtube" size={25} color={`${intensity == "High Intensity"?"white":"black"}`} />
+           <Text>News</Text></View>
         </TouchableOpacity>
       </View>
     </View>

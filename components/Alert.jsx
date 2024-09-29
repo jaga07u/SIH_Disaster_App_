@@ -6,45 +6,53 @@ import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityI
 const Alert = () => {
   const alerts = [
     {
-      title: 'Hurricane Alert',
-      intensity: 'Low Intensity',
-      issuedBy: 'Issued by Karnataka Government',
-      location: 'MV Extension Hoskote',
-      time: '09:12 IST, 24 Aug 2023',
-      intensityStyle: { backgroundColor: '#D8F5D8', color: '#28A745' },
-    },
-    {
-      title: 'Flood Alert',
-      intensity: 'Severe Intensity',
-      issuedBy: 'Issued by Karnataka Government',
-      location: 'MV Extension Hoskote',
-      time: '09:12 IST, 24 Aug 2023',
-      intensityStyle: { backgroundColor: '#FDE8D0', color: '#FF7900' },
-    },
-    {
-      title: 'Earthquake Alert',
+      title: 'Typhoon',
       intensity: 'High Intensity',
-      issuedBy: 'Issued by Karnataka Government',
-      location: 'MV Extension Hoskote',
-      time: '09:12 IST, 24 Aug 2023',
+      issuedBy: 'Issued by Taiwan Central Weather Bureau',
+      location: 'Taiwan Strait, Eastern Coast',
+      time: '10:30 IST, 29 Sep 2024',
       intensityStyle: { backgroundColor: '#FDEDED', color: '#FF4747' },
     },
     {
-      title: 'Earthquake Alert',
+      title: 'Earthquake',
       intensity: 'Severe Intensity',
-      issuedBy: 'Issued by Karnataka Government',
-      location: 'MV Extension Hoskote',
-      time: '09:12 IST, 24 Aug 2023',
-      intensityStyle: { backgroundColor: 'white', color: 'black' },
+      issuedBy: 'Issued by Disaster and Emergency Management Authority (AFAD)',
+      location: 'Eastern Turkey, Near Erzurum',
+      time: '03:20 IST, 28 Sep 2024',
+      intensityStyle: { backgroundColor: '#FDE8D0', color: '#FF7900' },
+    },
+    {
+      title: 'Floods',
+      intensity: 'Severe Intensity',
+      issuedBy: 'Issued by Sudanese Meteorological Authority',
+      location: 'Khartoum and Surrounding Areas',
+      time: '14:45 IST, 27 Sep 2024',
+      intensityStyle: { backgroundColor: '#FDE8D0', color: '#FF7900' },
+    },
+    {
+      title: 'Hurricane',
+      intensity: 'Low Intensity',
+      issuedBy: 'Issued by U.S. National Hurricane Center',
+      location: 'Pacific Coast, Mexico',
+      time: '11:00 IST, 25 Sep 2024',
+      intensityStyle: { backgroundColor: '#D8F5D8', color: '#28A745' },
+    },
+    {
+      title: 'Landslide',
+      intensity: 'High Intensity',
+      issuedBy: 'Issued by National Disaster Risk Reduction and Management Authority (NDRRMA)',
+      location: 'Western Nepal, Myagdi District',
+      time: '08:15 IST, 24 Sep 2024',
+      intensityStyle: { backgroundColor: '#FDEDED', color: '#FF4747' },
     },
   ];
-
+  
   return (
     <ScrollView contentContainerStyle={styles.container}>
       {/* Location Section */}
       <View style={styles.locationContainer}>
-        <Text style={styles.locationText}>📍 Bengaluru</Text>
-        <Text style={styles.locationSubText}>Nesladi Road, Electronic City</Text>
+        <Text style={styles.locationText}>📍 Bhubaneswar</Text>
+        <Text style={styles.locationSubText}>Devik Vihar,Tamando</Text>
       </View>
 
       {/* Search Bar */}

@@ -8,12 +8,12 @@ import Profile from './Profile';
 const Home = () => {
   const alerts = [
     {
-      title: 'Hurricane Alert',
-      intensity: 'Low Intensity',
-      issuedBy: 'Issued by Karnataka Government',
-      location: 'MV Extension, Hoskote',
-      time: '09:12 IST, 24 Aug 2023',
-      intensityStyle: { backgroundColor: '#FFF7E6' }, // Pass different styles based on intensity
+      title: 'Typhoon',
+      intensity: 'High Intensity',
+      issuedBy: 'Issued by Taiwan Central Weather Bureau',
+      location: 'Taiwan Strait, Eastern Coast',
+      time: '10:30 IST, 29 Sep 2024',
+      intensityStyle: { backgroundColor: '#FDEDED', color: '#FF4747' },
     },
     // Add more alert objects here
   ];

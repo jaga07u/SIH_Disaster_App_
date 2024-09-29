@@ -16,7 +16,7 @@ import Disaster from './components/Disaster_Guide';
 import Icon from "react-native-vector-icons/Ionicons";
 import Feather from "react-native-vector-icons/Feather";
 import Alert from './components/Alert';
-import Volunteer from './components/Volunteer';
+import News from './components/News';
 import FontAwesome5 from "react-native-vector-icons/FontAwesome5";
 
 // Create the Tab Navigator outside of the App component
@@ -89,8 +89,8 @@ function App() {
           }}
         />
         <TabNav.Screen
-          name="Volunteer"
-          component={Volunteer}
+          name="News"
+          component={News}
           options={{
             headerShown: false,
             tabBarIcon: ({ focused }) => (
